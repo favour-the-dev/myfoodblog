@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer utilities{
+    .max-cont{
+        @apply max-w-[65rem] w-full mx-auto
+    }
+    .flex-row-between{
+        @apply flex items-center justify-between gap-3
+    }
+}
