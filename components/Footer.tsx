@@ -24,11 +24,11 @@ function Footer() {
                     {/* newletter form */}
                     <div className="bg-[#647403] text-[#E4D8AB] rounded-3xl min-w-fit lg:min-w-1/2 p-5 flex flex-col gap-5">
                         <h2 className="font-semibold text-xl">Join our newsletter for the tastiest treats.</h2>
-                        <label htmlFor="newsletter" className="flex flex-col md:flex-row items-center gap-4">
+                        <label htmlFor="newsletter" className="w-full flex flex-col md:flex-row items-center gap-4">
                             <input 
                             type="text" 
                             placeholder="Your email address" 
-                            className="w-full md:w-fit text-xl border border-[#E4D8AB] placeholder:text-[#E4D8AB] rounded-3xl px-5 py-2 focus:outline-none"/>
+                            className="w-full md:w-fit   text-xl border border-[#E4D8AB] placeholder:text-[#E4D8AB] rounded-3xl px-5 py-2 focus:outline-none"/>
                             <button className="w-full md:w-fit bg-[#101010] text-[#E4D8AB] font-semibold text-lg uppercase rounded-3xl px-3 py-2">
                                 subscribe
                             </button>
