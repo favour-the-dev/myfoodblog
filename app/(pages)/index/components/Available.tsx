@@ -6,6 +6,8 @@ import { MdOutlineDinnerDining } from "react-icons/md";
 import { FaWineGlassAlt } from "react-icons/fa";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import TopicCard from "./topicCard";
+import { Articles } from "@/lib/dummyData";
+import ArticleCard from "./articleCard";
 function Available() {
     return ( 
         <>
@@ -14,8 +16,8 @@ function Available() {
                     {/* in my kitched */}
                     <div className="flex flex-col gap-8 mb-8">
                         <div className="flex items-center gap-3">
-                            <h1 data-aos="fade-right" className="uppercase text-[#647403] font-[500] text-3xl lg:text-4xl">in my <span className="text-5xl lg:text-8xl">kitchen</span></h1>
-                            <div data-aos="fade-up" className="w-full h-[1px] bg-[#647403]"/>
+                            <h1 data-aos="fade-right" data-aos-anchor-placement="center-bottom" className="uppercase text-[#647403] font-[500] text-3xl lg:text-4xl">in my <span className="text-5xl lg:text-8xl">kitchen</span></h1>
+                            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="w-full h-[1px] bg-[#647403]"/>
                         </div>
                         <div className="flex items-center flex-wrap justify-center gap-8">
                             <TopicCard
@@ -52,8 +54,21 @@ function Available() {
                     {/* in season */}
                     <div className="flex flex-col gap-8 mb-8">
                         <div className="flex items-center gap-3">
-                            <div data-aos="fade-up" className="w-full h-[1px] bg-[#647403]"/>
-                            <h1 data-aos="fade-left" className="uppercase text-[#647403] font-[500] text-3xl lg:text-4xl">in my <span className="text-5xl lg:text-8xl">season</span></h1>
+                            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="w-full h-[1px] bg-[#647403]"/>
+                            <h1 data-aos="fade-left" data-aos-anchor-placement="center-bottom" className="uppercase text-[#647403] font-[500] text-3xl lg:text-4xl">in my <span className="text-5xl lg:text-8xl">season</span></h1>
+                        </div>
+
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                            {Articles.map((article)=>{
+                                return(
+                                    <ArticleCard
+                                    key={article?.id}
+                                    articleImage={article?.articleImage}
+                                    articleTopic={article?.articleTopic}
+                                    articleDesc={article?.articleDesc}
+                                    />
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

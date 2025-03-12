@@ -2,7 +2,9 @@ import HomePage from "./(pages)/index/page";
 export default function Home() {
   return (
     <>
-      <HomePage/>
+      <div className="overflow-hidden">
+        <HomePage />
+      </div>
     </>
   );
 }

@@ -11,7 +11,7 @@ function HomePage() {
       }, []);
     return ( 
         <>
-            <section className="overflow-hidden">
+            <section className="">
                 <Hero/>
                 <Guide/>
                 <Available/>

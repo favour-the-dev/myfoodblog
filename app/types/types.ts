@@ -16,3 +16,9 @@ export interface topicCardProps{
     Icon: IconType
     topic: string
 }
+
+export interface ArticleCardProps{
+    articleImage: string | StaticImageData
+    articleTopic: string
+    articleDesc: string
+}

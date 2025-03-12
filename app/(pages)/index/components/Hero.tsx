@@ -5,7 +5,7 @@ import brownies from "../../../../assets/cutting.jpg";;
 function Hero() {
     return ( 
         <>
-            <section className="relative bg-[#647403] text-[#FFFEF6] w-full min-h-[80dvh] lg:min-h-screen flex flex-col items-center justify-center">
+            <section className="relative bg-[#647403] text-[#FFFEF6] w-full min-h-[100dvh] lg:min-h-screen flex flex-col items-center justify-center">
                 <div className="max-cont flex flex-col md:flex-row items-center justify-between">
                     {/* mobile image cover */}
                     <div className="lg:hidden bg-black absolute top-0 right-0 opacity-80 w-full h-full z-10"/>
