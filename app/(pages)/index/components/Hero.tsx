@@ -6,6 +6,7 @@ function Hero() {
     return ( 
         <>
             <section className="relative bg-[#647403] text-[#FFFEF6] w-full min-h-[100dvh] lg:min-h-screen flex flex-col items-center justify-center">
+                {/* feature article */}
                 <div className="max-cont flex flex-col md:flex-row items-center justify-between">
                     {/* mobile image cover */}
                     <div className="lg:hidden bg-black absolute top-0 right-0 opacity-80 w-full h-full z-10"/>
@@ -33,7 +34,7 @@ function Hero() {
                                 10 min read
                             </span>
                         </div>
-                        <Link href={'/'} className="w-full text-center md:w-fit bg-[#101010] text-[#E4D8AB] font-semibold uppercase rounded-3xl px-5 py-2 my-5">
+                        <Link href={'/article'} className="w-full text-center md:w-fit bg-[#101010] text-[#E4D8AB] font-semibold uppercase rounded-3xl px-5 py-2 my-5">
                             Read Now
                         </Link> 
                     </div>

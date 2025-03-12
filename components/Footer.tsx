@@ -1,10 +1,20 @@
 import Link from "next/link";
+import { Exo_2 } from "next/font/google";
+import { CiForkAndKnife } from "react-icons/ci";
+const exo_2 = Exo_2({
+    weight: ["400", "700",],
+    subsets: ["latin"],
+})
 function Footer() {
     return ( 
         <>
         <footer className="bg-[#E4D8AB] text-[#647403] w-full min-h-[30dh] p-5 overflow-hidden">
             <div className="max-cont flex flex-col">
-                <span data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="text-xl md:text-3xl font-semibold tracking-wide">MY FOOD</span>
+                <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true"  className={`text-[#647403] flex items-center ${exo_2.className}`}>
+                    <CiForkAndKnife className="text-3xl"/> <span className="ext-2xl md:text-4xl font-bold tracking-tighter">
+                    MY FOOD BLOG
+                    </span>
+                </div>
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-3">
                     {/* logo and links */}
                     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="max-w-fit">

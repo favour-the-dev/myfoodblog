@@ -58,7 +58,7 @@ function Available() {
                             <h1 data-aos="fade-left" data-aos-anchor-placement="center-bottom" className="uppercase text-[#647403] font-[500] text-3xl lg:text-4xl">in my <span className="text-5xl lg:text-8xl">season</span></h1>
                         </div>
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                        <div className="flex flex-col flex-wrap md:flex-row lg:flex-nowrap items-center justify-center gap-4">
                             {Articles.map((article)=>{
                                 return(
                                     <ArticleCard
