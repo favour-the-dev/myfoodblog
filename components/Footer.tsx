@@ -10,7 +10,7 @@ function Footer() {
         <>
         <footer className="bg-[#E4D8AB] text-[#647403] w-full min-h-[30dh] p-5 overflow-hidden">
             <div className="max-cont flex flex-col">
-                <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-once="true"  className={`text-[#647403] flex items-center ${exo_2.className}`}>
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"  className={`text-[#647403] flex items-center ${exo_2.className}`}>
                     <CiForkAndKnife className="text-3xl"/> <span className="ext-2xl md:text-4xl font-bold tracking-tighter">
                     MY FOOD BLOG
                     </span>
