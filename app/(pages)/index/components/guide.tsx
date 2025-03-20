@@ -10,7 +10,7 @@ function Guide() {
         <section className="w-full bg-[#F9F7EB] p-5 md:py-10">
             <div className="max-cont flex flex-col md:flex-row items-center gap-4">
                 {/* products */}
-                <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" className="bg-[#FFFEF6] shadow-box rounded-xl max-w-[500px] md:max-w-[50%] min-h-[400px] hover:scale-[1.025] duration-300 ease-linear">
+                <div data-aos="fade-right" data-aos-once="true" data-aos-anchor-placement="center-bottom" className="bg-[#FFFEF6] shadow-box rounded-xl max-w-[500px] md:max-w-[50%] min-h-[400px] hover:scale-[1.025] duration-300 ease-linear">
                     <h2 className="text-[30px] font-[500] p-4">Gift guide for foodies</h2>
                     <Image
                     src={product1}

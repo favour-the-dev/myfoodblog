@@ -7,7 +7,7 @@ import { ProductCardProps } from "@/app/types/types";
 function ProductCard({productImage, productName, productCategory, minsRead, userImage, userName, createdAt}:ProductCardProps) {
     return ( 
         <>
-            <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" className="bg-[#FFFEF6] shadow-box rounded-xl px-4 flex flex-col md:flex-row gap-3 h-full max-h-fit md:max-h-[200px] md:overflow-hidden cursor-pointer hover:scale-[1.025] duration-300 ease-linear">
+            <div data-aos="flip-up" data-aos-once="true" data-aos-anchor-placement="center-bottom" className="bg-[#FFFEF6] shadow-box rounded-xl px-4 flex flex-col md:flex-row gap-3 h-full max-h-fit md:max-h-[200px] md:overflow-hidden cursor-pointer hover:scale-[1.025] duration-300 ease-linear">
                 {/* image */}
                 <div className="w-full md:max-w-1/2">
                     <Image

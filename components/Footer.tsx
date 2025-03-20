@@ -17,7 +17,7 @@ function Footer() {
                 </div>
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-3">
                     {/* logo and links */}
-                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="max-w-fit">
+                    <div data-aos-once="true" data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="max-w-fit">
                         <div className="w-full my-2 h-[1px] bg-[#647403]"/>
                         <div className="w-full flex justify-between gap-4">
                             <div className="max-w-1/2">
@@ -32,7 +32,7 @@ function Footer() {
                         </div>
                     </div>
                     {/* newletter form */}
-                    <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" className="bg-[#647403] text-[#E4D8AB] rounded-3xl min-w-fit lg:min-w-1/2 p-5 flex flex-col gap-5">
+                    <div data-aos-once="true" data-aos="fade-left" data-aos-anchor-placement="center-bottom" className="bg-[#647403] text-[#E4D8AB] rounded-3xl min-w-fit lg:min-w-1/2 p-5 flex flex-col gap-5">
                         <h2 className="font-semibold text-xl">Join our newsletter for the tastiest treats.</h2>
                         <label htmlFor="newsletter" className="w-full flex flex-col md:flex-row items-center gap-4">
                             <input 
