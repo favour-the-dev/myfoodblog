@@ -39,9 +39,9 @@ function Login() {
                     animate={{opacity: 1}}
                     transition={{duration: 0.5  }}
                     className={`text-[#647403] flex items-center ${exo_2.className}`}>
-                        <CiForkAndKnife className="text-3xl"/> <span className="text-xl md:text-2xl font-bold tracking-tighter">
+                        <CiForkAndKnife className="text-3xl"/> <Link href={'/'} className="text-xl md:text-2xl font-bold tracking-tighter">
                             MY FOOD BLOG
-                        </span>
+                        </Link>
                     </motion.div>
                     {/* form */}
                     <form className="max-w-[80%] md:max-w-2/3 w-full mx-auto flex flex-col gap-5">

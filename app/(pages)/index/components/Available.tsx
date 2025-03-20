@@ -1,11 +1,5 @@
-import { MdOutlineEggAlt } from "react-icons/md";
-import { LuChefHat } from "react-icons/lu";
-import { FaGlassMartiniAlt } from "react-icons/fa";
-import { GiHamburger } from "react-icons/gi";
-import { MdOutlineDinnerDining } from "react-icons/md";
-import { FaWineGlassAlt } from "react-icons/fa";
-import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import TopicCard from "./topicCard";
+import categories from "@/lib/categories";
 import { Articles } from "@/lib/dummyData";
 import ArticleCard from "./articleCard";
 function Available() {
@@ -20,34 +14,18 @@ function Available() {
                             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="w-full h-[1px] bg-[#647403]"/>
                         </div>
                         <div className="flex items-center flex-wrap justify-center gap-8">
-                            <TopicCard
-                            Icon={MdOutlineEggAlt}
-                            topic="breakfast"
-                            />         
-                            <TopicCard
-                            Icon={LuChefHat}
-                            topic="baking"
-                            />
-                            <TopicCard
-                            Icon={FaGlassMartiniAlt}
-                            topic="cocktails"
-                            />
-                            <TopicCard
-                            Icon={GiHamburger}
-                            topic="Dinners"
-                            />
-                            <TopicCard
-                            Icon={MdOutlineDinnerDining}
-                            topic="pasta"
-                            />
-                            <TopicCard
-                            Icon={FaWineGlassAlt}
-                            topic="wine"
-                            />
-                            <TopicCard
-                            Icon={MdOutlineTipsAndUpdates}
-                            topic="tips"
-                            />
+                            {
+                                categories.map((cat)=>{
+                                    return(
+                                        <TopicCard
+                                        key={cat?.id}
+                                        Icon={cat?.icon}
+                                        topic={`${cat?.category}`}
+                                        animationType="fade-up"
+                                        /> 
+                                    )
+                                })
+                            }
                         </div>  
                     </div>
 

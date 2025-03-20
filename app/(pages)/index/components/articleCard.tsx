@@ -4,7 +4,7 @@ import Link from "next/link";
 function ArticleCard({articleImage, articleTopic, articleDesc}: ArticleCardProps) {
     return ( 
         <>
-            <Link data-aos="fade-up" data-aos-anchor-placement="center-bottom" href={`/${articleTopic}`} className="w-full max-w-[300px] h-[250px]">
+            <Link data-aos="fade-up" data-aos-anchor-placement="center-bottom" href={`/articles/${articleTopic}`} className="w-full max-w-[300px] h-[250px]">
                 <Image
                 src={articleImage}
                 alt={'article image'}

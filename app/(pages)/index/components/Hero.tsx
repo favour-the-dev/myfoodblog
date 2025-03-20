@@ -39,11 +39,11 @@ function Hero() {
                         </Link> 
                     </div>
                     {/* image content desktop */}
-                        <div data-aos="zoom-in" data-aos-once="true" className="hidden lg:block rounded-2xl min-w-[700px] max-h-[500px] top-0 absolute right-[-50px]">
+                        <div data-aos="zoom-in" data-aos-once="true" className="hidden lg:block rounded-3xl max-w-[725px] max-h-[600px] w-full h-full top-0 absolute right-[-25px]">
                             <Image
                             src={brownies}
                             alt=""
-                            className="w-full h-full rounded-[35%]"
+                            className="w-full h-full rounded-[42%]"
                             />
                         </div>
                 </div>

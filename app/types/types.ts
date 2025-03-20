@@ -15,6 +15,7 @@ export interface ProductCardProps{
 export interface topicCardProps{
     Icon: IconType
     topic: string
+    animationType: string
 }
 
 export interface ArticleCardProps{
